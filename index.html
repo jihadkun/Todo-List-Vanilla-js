@@ -20,16 +20,34 @@
       <h1>Ji's Todo List</h1>
     </header>
 
+    <!-- input form -->
     <form>
-      <input type="text" class="todo-input" />
+      <input
+        type="text"
+        class="todo-input"
+        autofocus
+        placeholder="Type in your task"
+      />
       <button class="todo-button" type="submit">
         <i class="fas fa-plus-square"></i>
       </button>
+      <!-- filters -->
+      <div class="select">
+        <select name="todos" class="filter-todo">
+          <option value="all">All</option>
+          <option value="done">Done</option>
+          <option value="notdone">Not Done</option>
+        </select>
+      </div>
+      <!-- filters end -->
     </form>
+    <!-- input form end -->
 
+    <!-- the list -->
     <div class="todo-container">
       <ul class="todo-list"></ul>
     </div>
+    <!-- the list end -->
     <script src="./app.js"></script>
   </body>
 </html>
